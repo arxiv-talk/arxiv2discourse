@@ -17,6 +17,7 @@ client = DiscourseClient(
 # Pull new articles
 for section in sections:
     feed = feedparser.parse(arxiv_rss + section)
+    print('Posting arXiv feed', feed.etag)
     
     for paper in feed.entries:
         try:
@@ -25,7 +26,7 @@ for section in sections:
             title = paper.title,
             tags = [section]
             )
-        except:
-            print('oops')
+        except Exception as e: 
+            print(e)
     
     
