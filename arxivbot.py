@@ -2,6 +2,7 @@
 import feedparser
 arxiv_rss = 'http://export.arxiv.org/rss/'
 sections = ['quant-ph']
+
 def clean_abstract(abstract):
     return abstract.replace('\n', ' ').removeprefix('<p>').removesuffix('</p>')
 
@@ -14,7 +15,7 @@ client = DiscourseClient(
         api_username='arxivbot',
         api_key=API_KEY)
 
-# Pull new articles
+# Pull and post new preprints
 for section in sections:
     feed = feedparser.parse(arxiv_rss + section)
     print('Posting arXiv feed', feed.etag)
