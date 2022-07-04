@@ -1,4 +1,4 @@
-Using `arxiv` and `pydiscourse` packages.
+Using `feedparser` and `pydiscourse`.
 
 TODO:
 - Hide API key

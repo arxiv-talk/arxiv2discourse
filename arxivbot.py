@@ -27,7 +27,6 @@ for section in sections:
             title = paper.title,
             tags = [section]
             )
+            
         except Exception as e: 
             print(e)
-    
-    
