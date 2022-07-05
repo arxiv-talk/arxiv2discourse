@@ -1,0 +1,99 @@
+{ "categories":
+  [
+   {
+      "id":"5",
+      "short_name":"cs",
+      "name":"Computer Science"
+   },
+   {
+      "id":"6",
+      "short_name":"eco",
+      "name":"Economics"
+   },
+   {
+      "id":"7",
+      "short_name":"cs",
+      "name":"Electrical Engineering and Sytems Science"
+   },
+   {
+      "id":"8",
+      "short_name":"math",
+      "name":"Mathematics"
+   },
+   {
+      "id": "9",
+      "short_name":"astro-ph",
+      "name":"Astrophysics"
+   },
+   {
+      "id":"9",
+      "short_name":"cond-mat",
+      "name":"Condensed Matter"
+   },
+   {
+      "id":"9",
+      "short_name":"gr-qc",
+      "name":"General Relativity and Quantum Cosmology"
+   },
+   {
+      "id":"9",
+      "short_name":"hep-ex",
+      "name":"High Energy Physics Experiments"
+   },
+   {
+      "id":"9",
+      "short_name":"hep-ph",
+      "name":"High Energy Physics Phenomenology"
+   },
+   {
+      "id":"9",
+      "short_name":"hep-th",
+      "name":"High Energy Physics Theory"
+   },
+   {
+      "id":"9",
+      "short_name":"math-ph",
+      "name":"Mathematical Physics"
+   },
+   {
+      "id":"9",
+      "short_name":"nlin",
+      "name":"Nonlinear Sciences"
+   },
+   {
+      "id":"9",
+      "short_name":"nucl-ex",
+      "name":"Nuclear Experiment"
+   },
+   {
+      "id":"9",
+      "short_name":"nuc-th",
+      "name":"Nuclear Theory"
+   },
+   {
+      "id":"9",
+      "short_name":"physics",
+      "name":"Physics"
+   },
+   {
+      "id":"9",
+      "short_name":"quant-ph",
+      "name":"Quantum Physics"
+   },
+   {
+      "id":"10",
+      "short_name":"q-bio",
+      "name":"Quantitative Biology"
+   },
+   {
+      "id":"11",
+      "short_name":"q-fin",
+      "name":"Quantitative Finance"
+   },
+   {
+      "id":"12",
+      "short_name":"stat",
+      "name":"Statistics"
+   }
+ ]
+}
