@@ -1,7 +1,7 @@
 # arXiv API
 import feedparser
 arxiv_rss = 'http://export.arxiv.org/rss/'
-sections = ['quant-ph']
+
 
 def clean_abstract(abstract):
     return abstract.replace('\n', ' ').removeprefix('<p>').removesuffix('</p>')
@@ -16,17 +16,17 @@ client = DiscourseClient(
         api_key=API_KEY)
 
 # Pull and post new preprints
-for section in sections:
-    feed = feedparser.parse(arxiv_rss + section)
-    print('Posting arXiv feed', feed.etag)
+for symbol, category in CATEGORIES.items():
+    
+    feed = feedparser.parse(arxiv_rss + symbol)
     
     for paper in feed.entries:
         try:
             client.create_post(
+            category_id = category.name, 
             content = clean_abstract(paper.summary),
             title = paper.title,
             tags = [section]
             )
-            
         except Exception as e: 
             print(e)
